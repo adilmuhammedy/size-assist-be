@@ -11,11 +11,11 @@ data = pd.read_csv(
     sep=r"\s+",
     engine="python",
     skiprows=1,
-    names=["height", "weight", "age", "gender", "chest", "waist", "shoulder"]
+    names=["height", "weight", "gender", "chest", "waist", "shoulder"]
 )
 data = data.dropna()
 # Features & target
-X = data[["height", "weight", "age","gender"]]
+X = data[["height", "weight","gender"]]
 y = data[["chest", "waist", "shoulder"]]
 
 # Split

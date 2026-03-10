@@ -30,7 +30,6 @@ class GarmentSize(BaseModel):
 class CompleteEvaluationRequest(BaseModel):
     height: float
     weight: float
-    age: int
     gender: int
     tightnessPreference: Optional[int] = Field(default=2, ge=0, le=4)
     apparelType: str  

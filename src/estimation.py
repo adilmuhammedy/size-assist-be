@@ -6,8 +6,8 @@ model = joblib.load("../models/body_model2.pkl")
 
 
 
-def predict_body(height: float, weight: float, age:int, gender: int) -> BodyResponse:
-    input_data = np.array([[height, weight, age, gender]])
+def predict_body(height: float, weight: float, gender: int) -> BodyResponse:
+    input_data = np.array([[height, weight, gender]])
     prediction = model.predict(input_data)
 
     return BodyResponse(

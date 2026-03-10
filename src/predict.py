@@ -1,6 +1,5 @@
 import joblib
 import numpy as np
-
 model = joblib.load("body_model2.pkl")
 
 # Example: 182cm, 75kg, male

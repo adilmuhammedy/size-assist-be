@@ -30,7 +30,7 @@ app.add_middleware(
 # --------------------------------
 @app.post("/predict", response_model=BodyResponse, tags=["Estimation"])
 def predict(data: BodyRequest):
-    return predict_body(data.height, data.weight, data.age, data.gender)
+    return predict_body(data.height, data.weight, data.gender)
 
 
 
@@ -51,7 +51,6 @@ def complete_evaluation(data: CompleteEvaluationRequest):
     body = predict_body(
         data.height,
         data.weight,
-        data.age,
         data.gender
     )
 
