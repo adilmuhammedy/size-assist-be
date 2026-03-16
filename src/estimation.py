@@ -2,7 +2,7 @@ import joblib
 import numpy as np
 from schemas import BodyResponse
 
-model = joblib.load("../models/body_model2.pkl")
+model = joblib.load("../models/body_model.pkl")
 
 
 
