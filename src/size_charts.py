@@ -1,4 +1,4 @@
-from schemas import GarmentSize
+from src.schemas import GarmentSize
 
 UNIFIED_SIZE_CHART = {
 

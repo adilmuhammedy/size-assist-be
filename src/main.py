@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from schemas import (
+from src.schemas import (
     BodyRequest,
     BodyResponse,
     CompleteEvaluationRequest,
@@ -7,10 +7,10 @@ from schemas import (
 )
 from fastapi import HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from estimation import predict_body
-from ranking import generate_ranking
-from recommendation import select_best_size
-from size_charts import UNIFIED_SIZE_CHART
+from src.estimation import predict_body
+from src.ranking import generate_ranking
+from src.recommendation import select_best_size
+from src.size_charts import UNIFIED_SIZE_CHART
 
 app = FastAPI(
     title="SizeAssist API",

@@ -1,8 +1,11 @@
 import joblib
 import numpy as np
-from schemas import BodyResponse
+from src.schemas import BodyResponse
+from pathlib import Path
 
-model = joblib.load("../models/body_model.pkl")
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = BASE_DIR.parent / "models" / "body_model.pkl"
+model = joblib.load(MODEL_PATH)
 
 
 
